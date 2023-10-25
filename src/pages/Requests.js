@@ -30,7 +30,7 @@ requestPopular: {
     },
     requestGenres:  {
       method: 'GET',
-      url: 'https://api.themoviedb.org/3/genre/movie/list',
+      url: 'https://api.themoviedb.org/3/discover/movie',
       params: {language: 'en'},
       headers: {
         accept: 'application/json',
