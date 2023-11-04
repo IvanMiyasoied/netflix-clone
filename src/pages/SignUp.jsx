@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const SignUp = () => {
   return (
@@ -14,6 +15,13 @@ const SignUp = () => {
                         <input className='p-3 my-2 bg-gray-700 rounded' type="email" placeholder='Email'/>
                         <input className='p-3 my-2 bg-gray-700 rounded' type="password" placeholder='Password'/>
                         <button className='bg-red-600 py-3 my-6 rounded font-bold'>Sign Up</button>
+                        <div className='flex justify-between items-center text-sm text-gray-600'>
+                          <p><input className='mr-2' type="checkbox"/>Remember me</p>
+                          <p>Need help?</p>
+                        </div>
+                        <p className='py-4'><span className='text-gray-600'>Already subscribed to Netflix?</span>{''}
+                        <Link to='/login'>Sign In</Link>
+                        </p>
                       </form>
                    </div>
                 </div>
